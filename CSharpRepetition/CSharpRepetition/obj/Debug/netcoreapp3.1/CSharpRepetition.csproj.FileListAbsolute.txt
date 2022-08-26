@@ -1,0 +1,12 @@
+C:\Users\emma.dahlqvist4\source\repos\CSharpRepetition\CSharpRepetition\bin\Debug\netcoreapp3.1\CSharpRepetition.exe
+C:\Users\emma.dahlqvist4\source\repos\CSharpRepetition\CSharpRepetition\bin\Debug\netcoreapp3.1\CSharpRepetition.deps.json
+C:\Users\emma.dahlqvist4\source\repos\CSharpRepetition\CSharpRepetition\bin\Debug\netcoreapp3.1\CSharpRepetition.runtimeconfig.json
+C:\Users\emma.dahlqvist4\source\repos\CSharpRepetition\CSharpRepetition\bin\Debug\netcoreapp3.1\CSharpRepetition.runtimeconfig.dev.json
+C:\Users\emma.dahlqvist4\source\repos\CSharpRepetition\CSharpRepetition\bin\Debug\netcoreapp3.1\CSharpRepetition.dll
+C:\Users\emma.dahlqvist4\source\repos\CSharpRepetition\CSharpRepetition\bin\Debug\netcoreapp3.1\CSharpRepetition.pdb
+C:\Users\emma.dahlqvist4\source\repos\CSharpRepetition\CSharpRepetition\obj\Debug\netcoreapp3.1\CSharpRepetition.csproj.CoreCompileInputs.cache
+C:\Users\emma.dahlqvist4\source\repos\CSharpRepetition\CSharpRepetition\obj\Debug\netcoreapp3.1\CSharpRepetition.AssemblyInfoInputs.cache
+C:\Users\emma.dahlqvist4\source\repos\CSharpRepetition\CSharpRepetition\obj\Debug\netcoreapp3.1\CSharpRepetition.AssemblyInfo.cs
+C:\Users\emma.dahlqvist4\source\repos\CSharpRepetition\CSharpRepetition\obj\Debug\netcoreapp3.1\CSharpRepetition.dll
+C:\Users\emma.dahlqvist4\source\repos\CSharpRepetition\CSharpRepetition\obj\Debug\netcoreapp3.1\CSharpRepetition.pdb
+C:\Users\emma.dahlqvist4\source\repos\CSharpRepetition\CSharpRepetition\obj\Debug\netcoreapp3.1\CSharpRepetition.genruntimeconfig.cache
