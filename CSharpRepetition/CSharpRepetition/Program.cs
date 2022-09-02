@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Linq;
+using System.Threading;
 
 namespace CSharpRepetition
 {
@@ -6,13 +8,266 @@ namespace CSharpRepetition
     {
         public static void Main(string[] args)
         {
-
-            ex27();
+            ex46();
         }
 
-        static void ex()
+        static void ex46()
         {
+            int[] numbers = new int[5];
+            for(int i = 0; i < 5; i++) {
+                Console.WriteLine("Ange nummer " + (i+1) + ":");
+                int num = int.Parse(Console.ReadLine());
+                numbers[i] = num;
+            }
+            int max = numbers.Max();
+            Console.WriteLine("Det största numret är: " + max);
+        }
 
+        static void ex45()
+        {
+            Console.WriteLine("Skriv något");
+            string input = Console.ReadLine();
+            char[] inputChars = input.ToCharArray();
+            
+            //texten innehåller minst 2 characters
+            if(inputChars.Length >= 2)
+            {
+                //den innehåller if
+               if(inputChars[0] != 'i' && inputChars[1] != 'f')
+               {
+                    input = "if " + input; 
+               }
+            }
+
+            Console.WriteLine(input);
+        }
+
+        static void ex44()
+        {
+            while (true)
+            {
+                Console.WriteLine("Skriv ett tal");
+                int num1 = int.Parse(Console.ReadLine());
+                if (num1 % 10 == 0)
+                {
+                    Console.WriteLine("Result: " + true);
+                } else
+                {
+                    Console.WriteLine("Result: " + false);
+                }
+                Thread.Sleep(200);
+            }
+        }
+
+        static void ex43()
+        {
+            Console.WriteLine("Ange ett heltal");
+            int num1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Ange ett heltal");
+            int num2 = int.Parse(Console.ReadLine());
+
+            int sum = num1 + num2;
+            if(num1 == 23 || num2 == 23 || sum == 23)
+            {
+                Console.WriteLine("Resultat: " + true);
+            }
+
+
+        }
+
+        static void ex42()
+        {
+            Console.WriteLine("Ange n");
+            int n = int.Parse(Console.ReadLine());
+            int diff = Math.Abs(n - 63);
+
+            if(n > 63)
+            {
+                diff = diff * 2;
+            }
+            Console.WriteLine(diff);
+        }
+
+        static void ex41()
+        {
+            while (true)
+            {
+                //ange tal
+                try { //bryt om annat än siffra anges
+                    Console.WriteLine("Skriv ett heltal:");
+                    int num1 = int.Parse(Console.ReadLine());
+                    Console.WriteLine("Skriv ett heltal:");
+                    int num2 = int.Parse(Console.ReadLine());
+
+                    int sum = num1 + num2;
+
+                    //om de är lika
+                    if (num1 == num2)
+                    {
+                        //returnera fyrdubbla summan
+                        Console.WriteLine(sum * 4);
+                    }
+                    else
+                    {
+                        Console.WriteLine(sum);
+                    }
+                } catch( Exception e)
+                {
+                    Console.WriteLine("Avbröt");
+                    break;
+                }
+            }
+        }
+
+        static void ex40()
+        {
+            int sum = 0;
+            int count = 0;
+            while (true)
+            {
+                Console.WriteLine("Skriv ett tal:");
+                int guess = int.Parse(Console.ReadLine());
+                if (guess == 0)
+                {
+                    break;
+                }
+                count++;
+                sum += guess;
+            }
+
+            Console.WriteLine("Summa: " + sum + "\n" + "Antal: " + count);
+        }
+
+        static void ex36()
+        {
+            while (true)
+            {
+                Console.WriteLine("Gissa siffran:");
+                int guess = int.Parse(Console.ReadLine());
+                if (guess == 0)
+                {
+                    break;
+                } else if(guess > 0)
+                {
+                    Console.WriteLine(Math.Pow(guess, 2));
+                } else
+                {
+                    Console.WriteLine("Det är negativt!");
+                }
+
+            }
+        }
+
+        static void ex35()
+        {
+            while (true)
+            {
+                Console.WriteLine("Gissa siffran:");
+                int guess = int.Parse(Console.ReadLine());
+                if(guess == 42)
+                {
+                    Console.WriteLine("Rätt!");
+                    break;
+                }
+
+            }
+        }
+
+        static void ex34()
+        {
+            while (true)
+            {
+                Console.WriteLine("Vill du fortsätta?");
+                string input = Console.ReadLine();
+                if(input == "nej")
+                {
+                    break;
+                }
+            }
+        }
+
+        static void ex31()
+        {
+            Console.WriteLine("Skriv ett tal:");
+            int num = int.Parse(Console.ReadLine());
+            if(num % 2 == 0)
+            {
+                Console.WriteLine($"{num} är jämnt");
+            } else
+            {
+                Console.WriteLine($"{num} är udda");
+            }
+        }
+
+        static void ex30()
+        {
+            Console.WriteLine("Hur mycket poäng fick du?");
+            int score = int.Parse(Console.ReadLine());
+
+            if(score < 0)
+            {
+                Console.WriteLine("Omöjligt");
+
+            } else if(score <= 49)
+            {
+                Console.WriteLine("Fail");
+            }
+            else if (score <= 59)
+            {
+                Console.WriteLine("1");
+            }
+            else if (score <= 69)
+            {
+                Console.WriteLine("2");
+            }
+            else if (score <= 79)
+            {
+                Console.WriteLine("3");
+            }
+            else if (score <= 89)
+            {
+                Console.WriteLine("4");
+            }
+            else if (score <= 100)
+            {
+                Console.WriteLine("5");
+            }
+            else 
+            {
+                Console.WriteLine("Outstanding");
+            }
+        }
+
+        static void ex29()
+        {
+            Console.WriteLine("Skriv ett tal");
+            int num1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Skriv ett tal");
+            int num2 = int.Parse(Console.ReadLine());
+
+            if(num1 == num2)
+            {
+                Console.WriteLine("De är lika");
+            } else if(num1 > num2)
+            {
+                Console.WriteLine($"{num1} är större än {num2}");
+            } else
+            {
+                Console.WriteLine($"{num2} är större än {num1}");
+            }
+        }
+
+        static void ex28()
+        {
+            Console.WriteLine("Hur gammal är du?");
+            int age = int.Parse(Console.ReadLine());
+            if(age >= 18)
+            {
+                Console.WriteLine("Du är myndig");
+            } else
+            {
+                Console.WriteLine("Du är inte myndig");
+            }
         }
 
         static void ex27()

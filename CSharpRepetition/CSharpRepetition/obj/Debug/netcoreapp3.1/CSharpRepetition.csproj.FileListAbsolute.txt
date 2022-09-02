@@ -10,3 +10,4 @@ C:\Users\emma.dahlqvist4\source\repos\CSharpRepetition\CSharpRepetition\obj\Debu
 C:\Users\emma.dahlqvist4\source\repos\CSharpRepetition\CSharpRepetition\obj\Debug\netcoreapp3.1\CSharpRepetition.dll
 C:\Users\emma.dahlqvist4\source\repos\CSharpRepetition\CSharpRepetition\obj\Debug\netcoreapp3.1\CSharpRepetition.pdb
 C:\Users\emma.dahlqvist4\source\repos\CSharpRepetition\CSharpRepetition\obj\Debug\netcoreapp3.1\CSharpRepetition.genruntimeconfig.cache
+C:\Users\emma.dahlqvist4\source\repos\CSharpRepetition\CSharpRepetition\obj\Debug\netcoreapp3.1\CSharpRepetition.csprojAssemblyReference.cache
