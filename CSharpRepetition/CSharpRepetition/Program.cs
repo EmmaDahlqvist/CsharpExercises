@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 
@@ -8,7 +9,50 @@ namespace CSharpRepetition
     {
         public static void Main(string[] args)
         {
-            ex46();
+            Utmaning();
+        }
+
+        static void Utmaning()
+        {
+            List<int> numbers = new List<int>(); //lista med nummer
+            Console.WriteLine("Skriv in nummer, skriv avrbyt när du är klar:");
+            while (true) 
+            {
+                try{ //ifall man skriver annat än siffra avbryts loopen
+                    int num = int.Parse(Console.ReadLine());
+                    numbers.Add(num);
+                }catch(Exception e)
+                {
+                    Console.WriteLine("Avbröts");
+                    break;
+                }
+            }
+
+            //temporär int där nummer sparas och byts ut
+            int temp;
+
+            //sortera
+            for (int i = 0; i < numbers.Count - 1; i++)
+            {
+                //jämför alla nummer
+                for (int s = i + 1; s < numbers.Count; s++)
+                {
+                    //ifall det är större, byt plats 
+                    if (numbers[i] > numbers[s])
+                    {
+                        temp = numbers[i];
+                        numbers[i] = numbers[s];
+                        numbers[s] = temp;
+                    }
+                }
+            }
+
+            Console.WriteLine("\nResultat:");
+            for(int i = 0; i < numbers.Count; i++)
+            {
+                Console.WriteLine((i + 1) + ": " + numbers[i]);
+            }
+
         }
 
         static void ex46()
